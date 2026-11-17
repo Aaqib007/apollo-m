@@ -346,6 +346,8 @@ class MicroLayer:
             result["toxicity_score"] = [self.score_comment(str(t)) for t in df[text_col]]
         result["is_toxic"] = result["toxicity_score"] >= self.cfg.TOXICITY_THRESHOLD
         log.info("Toxic rate: %.2f%%", result["is_toxic"].mean() * 100)
+        result.to_csv(self.cfg.REDDIT_COMMENTS, index=False)
+        log.info("Saved toxicity scores back to apollo_comments.csv")
         return result
 
     def compute_community_toxicity(self, df: pd.DataFrame) -> pd.DataFrame:
