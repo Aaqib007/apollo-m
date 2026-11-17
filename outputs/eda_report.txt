@@ -1,27 +1,27 @@
 ==================================================
 APOLLO-M EDA & PREPROCESSING REPORT
 ==================================================
-Raw rows loaded:        94,171
+Raw rows loaded:        96,647
 Columns:                ['subreddit', 'author', 'body', 'score', 'created_utc', 'id', 'group_id', 'toxicity_score', 'is_toxic', 'toxicity_label']
 Unique subreddits:      39
-After null drop:        94,171 rows
-Duplicates removed:     75
-After text cleaning:    94,096 rows
-Overall toxic rate:     0.00%
+After null drop:        96,647 rows
+Duplicates removed:     1,923
+After text cleaning:    94,171 rows
+Overall toxic rate:     nan%
 Flagged toxic rate:     0.00%
 
 Top 10 most active subreddits:
   r/news: 2,495 posts
   r/technology: 2,493 posts
+  r/science: 2,490 posts
   r/gaming: 2,477 posts
   r/geopolitics: 2,477 posts
   r/movies: 2,476 posts
   r/MensRights: 2,472 posts
-  r/science: 2,472 posts
   r/nba: 2,471 posts
   r/worldnews: 2,468 posts
   r/SuicideWatch: 2,467 posts
 
-Final clean rows:       94,096
-Rows removed total:     75 (0.1%)
+Final clean rows:       94,171
+Rows removed total:     2,476 (2.6%)
 ==================================================
